@@ -22,7 +22,7 @@ const ProjectFour = () => {
             </li>
           </ul>
           <p>
-            <span className="fw-bold">Technologies:</span> Javascript, Bootstrap,
+            <span className="fw-bold">Technologies:</span> React ,Javascript, Bootstrap,
             CSS3, HTML5.
           </p>
           <button className="btn btn-portfolio my-2">
@@ -31,7 +31,7 @@ const ProjectFour = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faEye} /> Live Preview
+              <FontAwesomeIcon icon={faEye} /> Preview
             </a>
           </button>
           <br />

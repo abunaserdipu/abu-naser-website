@@ -8,7 +8,7 @@ const ProjectFive = () => {
   return (
     <div>
       <div className="card">
-        <h5 className="my-2">Shooting Championship Players Website</h5>
+        <h5 className="my-2">Cooking Master Foods Searching Website</h5>
         <img className="img-fluid" src={PrjFive} alt="" />
         <div className="card-body">
           <p> </p>
@@ -24,8 +24,7 @@ const ProjectFive = () => {
             </li>
           </ul>
           <p>
-            <span className="fw-bold">Technologies:</span> React, React Router,
-            Firebase, Bootstrap, MongoDB, ImgBB.
+            <span className="fw-bold">Technologies:</span> Javascript, API Bootstrap, CSS3, HTML5.
           </p>
           <button className="btn btn-portfolio my-2">
             <a
@@ -33,7 +32,7 @@ const ProjectFive = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faEye} /> Live Preview
+              <FontAwesomeIcon icon={faEye} /> Preview
             </a>
           </button>
           <br />

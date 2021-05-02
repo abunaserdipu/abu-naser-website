@@ -1,6 +1,12 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import Navbar from "./Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMobile,
+  faEnvelope,
+  faHome,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   function sendEmail(e) {
@@ -73,17 +79,23 @@ const Contact = () => {
           </div>
           <div className="col-md-6 my-5">
             <div className="card bg-dark text-white p-4">
-              <h5>Phone</h5>
+              <h5>
+                <FontAwesomeIcon icon={faMobile} /> Phone
+              </h5>
               01521327682
             </div>
             <div className="card bg-dark text-white my-2 p-4">
-              <h5>Email</h5>
+              <h5>
+                <FontAwesomeIcon icon={faEnvelope} /> Email
+              </h5>
               abunaserdipu582@gmail.com
               <br />
               abunaserdipu0@gmail.com
             </div>
             <div className="card bg-dark text-white my-2 p-4">
-              <h5>Address</h5>
+              <h5>
+                <FontAwesomeIcon icon={faHome} /> Address
+              </h5>
               C.B-132, Puraton Kachukhet <br />
               Dhaka -1206
             </div>

@@ -26,7 +26,7 @@ const ProjectTwo = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faEye} /> Live Preview
+            <FontAwesomeIcon icon={faEye} /> Preview
           </a>
         </button>
         <br />

@@ -1,6 +1,8 @@
 import React from "react";
 import Skill from "./Skill";
 import Navbar from "./Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   const leftSkills = [
@@ -45,10 +47,8 @@ const Resume = () => {
       <div className="container">
         <div className="text-center">
           <button className="btn btn-portfolio my-3">
-            <a
-              href="https://drive.google.com/uc?export=download&id=1wYTTnm00hV0wbckbNUE2UiX28uVFW438"
-            >
-              Download Resume
+            <a href="https://drive.google.com/uc?export=download&id=1wYTTnm00hV0wbckbNUE2UiX28uVFW438">
+              <FontAwesomeIcon icon={faDownload} /> Download Resume
             </a>
           </button>
         </div>
@@ -68,51 +68,82 @@ const Resume = () => {
         </div>
         <h3 className="my-3 fw-bold">My Projects</h3>
         <div className="row">
-            <div className="col-md-4">
-              <p>31 March 2021 - 02 April 2021</p>
-            </div>
-            <div className="col-md-8">
-              <h6 style={{color: 'green'}}>Daily Products Full Stack Website</h6>
-              <ul>
-                <li>MongoDB is used as a database and images stored in imgBB.</li>
-                <li>Client site deployed in firebase and server site deployed in Heroku.</li>
-                <li>Bootstrap is used for makes the website responsive.</li>
-              </ul>
-            </div>
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 31 March 2021 - 02 April
+              2021
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>
+              Daily Products Full Stack Website
+            </h6>
+            <ul>
+              <li>MongoDB is used as a database and images stored in imgBB.</li>
+              <li>
+                Client site deployed in firebase and server site deployed in
+                Heroku.
+              </li>
+              <li>Bootstrap is used for makes the website responsive.</li>
+            </ul>
+          </div>
         </div>
         <div className="row">
-            <div className="col-md-4">
-              <p>19 March 2021 - 21 March 2021</p>
-            </div>
-            <div className="col-md-8">
-              <h6 style={{color: 'green'}}>Dhaka Wheel Transport Service</h6>
-              <ul>
-                <li>Login system applied by using firebase authentication, the user must be logged in for taking service. Bootstrap is used for makes the website responsive.</li>
-                <li>React Router used to go from one page to another it helps to avoid loading complexity.</li>
-                <li>Private Route used for the secure specific page.</li>
-              </ul>
-            </div>
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 19 March 2021 - 21 March
+              2021
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>Dhaka Wheel Transport Service</h6>
+            <ul>
+              <li>
+                Login system applied by using firebase authentication, the user
+                must be logged in for taking service. Bootstrap is used for
+                makes the website responsive.
+              </li>
+              <li>
+                React Router used to go from one page to another it helps to
+                avoid loading complexity.
+              </li>
+              <li>Private Route used for the secure specific page.</li>
+            </ul>
+          </div>
         </div>
         <div className="row">
-            <div className="col-md-4">
-              <p>15 April 2021 - 19 April 2021</p>
-            </div>
-            <div className="col-md-8">
-              <h6 style={{color: 'green'}}>Car Repair Service Complete Website</h6>
-              <ul>
-                <li>Admin can add new services and remove services from the homepage.</li>
-                <li>Logged in users can order services, gave the review, and see their ordered services.</li>
-                <li>International payment method stripe used for payment.</li>
-              </ul>
-            </div>
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 15 April 2021 - 19 April
+              2021
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>
+              Car Repair Service Complete Website
+            </h6>
+            <ul>
+              <li>
+                Admin can add new services and remove services from the
+                homepage.
+              </li>
+              <li>
+                Logged in users can order services, gave the review, and see
+                their ordered services.
+              </li>
+              <li>International payment method stripe used for payment.</li>
+            </ul>
+          </div>
         </div>
         <h3 className="my-3 fw-bold">Educational Qualifications</h3>
         <div className="row">
           <div className="col-md-4">
-            <p>2015-2021</p>
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 2015-2021
+            </p>
           </div>
           <div className="col-md-8">
-            <h6 style={{color: 'green'}}>BBA(Honours) in Management</h6>
+            <h6 style={{ color: "green" }}>BBA(Honours) in Management</h6>
             <p className="fw-bold">Dhaka College</p>
           </div>
         </div>
