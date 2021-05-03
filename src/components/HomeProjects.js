@@ -4,12 +4,13 @@ import ProjectTwo from "../images/projectTwo.png";
 import ProjectThree from "../images/projectThree.png";
 import { Link } from "react-router-dom";
 
+
 const HomeProjects = () => {
   return (
     <section>
       <div className="container my-5 text-center">
       <h2 className="my-5">Projects</h2>
-        <div className="row">
+        <div className="row" data-aos="fade-right">
           <div className="col-md-4 my-3">
             <div className="card" style={{height: '100%'}}>
               <img className="img-fluid" src={ProjectOne} alt="" />

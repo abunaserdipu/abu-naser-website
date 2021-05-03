@@ -11,6 +11,9 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({duration: 2000});
 
 function App() {
   return (

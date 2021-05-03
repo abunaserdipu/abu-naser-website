@@ -22,7 +22,7 @@ const About = () => {
           <div className="col-md-6 my-5 text-center">
             <img
               className="img-fluid"
-              style={{ width: "300px", height: "300px", borderRadius: "50%" }}
+              style={{ width: "300px", height: "300px",objectFit: 'cover', borderRadius: "50%" }}
               src={myPic}
               alt=""
             />
