@@ -9,12 +9,7 @@ const Banner = () => {
   return (
     <section style={{ minHeight: "100vh" }}>
       <div className="container text-center">
-        <button className="btn btn-portfolio my-3">
-          <a href="https://drive.google.com/uc?export=download&id=1wYTTnm00hV0wbckbNUE2UiX28uVFW438">
-            <FontAwesomeIcon icon={faDownload} /> Download Resume
-          </a>
-        </button>
-        <div className="row">
+        <div className="row my-5">
           <div className="col-md-6 my-5">
             <h3>
               I am{" "}
@@ -23,7 +18,8 @@ const Banner = () => {
                   strings: [
                     "Abu Naser Dipu",
                     "Web Developer",
-                    "Full Stack Developer",
+                    "MERN Stack Developer",
+                    "Javascript Developer"
                   ],
                   autoStart: true,
                   loop: true,
@@ -32,11 +28,16 @@ const Banner = () => {
             </h3>
             <h5>
               I like to do my job with passion & care. I have skill in{" "}
-              <span className="text-success">
+                <span style={{color: 'slateBlue'}}>
                 React,Javascript, Bootstrap, Node.js, Material UI, React
-                Bootstrap, Firebase, MongoDB HTML5, CSS3
-              </span>
+                Bootstrap, Firebase, MongoDB HTML5, CSS3</span>.
             </h5>
+            
+        <button className="btn btn-portfolio my-3">
+          <a href="https://drive.google.com/uc?export=download&id=19azP-l6_EbNbDa4Fg0nX-IuWB1AWdPgg">
+            <FontAwesomeIcon icon={faDownload} /> Download Resume
+          </a>
+        </button>
           </div>
           <div className="col-md-6 my-5">
             <img
@@ -54,7 +55,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <ParticlesBg type="circle" bg={true} />
+      <ParticlesBg type="polygon" bg={true} />
     </section>
   );
 };

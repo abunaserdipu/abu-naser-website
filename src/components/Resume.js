@@ -47,7 +47,7 @@ const Resume = () => {
       <div className="container">
         <div className="text-center">
           <button className="btn btn-portfolio my-3">
-            <a href="https://drive.google.com/uc?export=download&id=1wYTTnm00hV0wbckbNUE2UiX28uVFW438">
+            <a href="https://drive.google.com/uc?export=download&id=19azP-l6_EbNbDa4Fg0nX-IuWB1AWdPgg">
               <FontAwesomeIcon icon={faDownload} /> Download Resume
             </a>
           </button>
