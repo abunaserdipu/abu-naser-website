@@ -12,14 +12,13 @@ const Banner = () => {
         <div className="row my-5">
           <div className="col-md-6 my-5">
             <h3>
-              I am{" "}
+              <span style={{ color: "green" }}>Abu Naser Dipu</span>{" "}
               <Typewriter
                 options={{
                   strings: [
-                    "Abu Naser Dipu",
-                    "Web Developer",
+                    "Full Stack Web Developer",
                     "MERN Stack Developer",
-                    "Javascript Developer"
+                    "Javascript Developer",
                   ],
                   autoStart: true,
                   loop: true,
@@ -28,16 +27,18 @@ const Banner = () => {
             </h3>
             <h5>
               I like to do my job with passion & care. I have skill in{" "}
-                <span style={{color: 'slateBlue'}}>
-                React,Javascript, Bootstrap, Node.js, Material UI, React
-                Bootstrap, Firebase, MongoDB HTML5, CSS3</span>.
+              <span style={{ color: "slateBlue" }}>
+                ReactJS,Javascript, Bootstrap, ExpressJS, Node.js, Material UI,
+                React Bootstrap, Firebase, MongoDB, HTML5, CSS3
+              </span>
+              .
             </h5>
-            
-        <button className="btn btn-portfolio my-3">
-          <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
-            <FontAwesomeIcon icon={faDownload} /> Download Resume
-          </a>
-        </button>
+
+            <button className="btn btn-portfolio my-3">
+              <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
+                <FontAwesomeIcon icon={faDownload} /> Download Resume
+              </a>
+            </button>
           </div>
           <div className="col-md-6 my-5">
             <img

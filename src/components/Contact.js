@@ -33,7 +33,7 @@ const Contact = () => {
     <div>
       <Navbar />
       <div className="container">
-        <h2 className="portfolio-font mt-5 mb-3 text-center">Contact me</h2>
+        <h2 className="portfolio-font mt-5 mb-3 p-3 text-center">Contact me</h2>
         <div className="row">
           <div className="col-md-6 my-5">
             <form onSubmit={sendEmail}>

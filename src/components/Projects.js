@@ -11,10 +11,10 @@ const Projects = () => {
     <div>
       <Navbar />
       <div className="container">
-        <h2 className="portfolio-font my-5 text-center">Projects</h2>
+        <h2 className="portfolio-font my-5 p-3 text-center">Projects</h2>
         <div className="row text-center">
           <div className="col-md-4 my-3">
-          <ProjectOne />
+            <ProjectOne />
           </div>
           <div className="col-md-4 my-3">
             <ProjectTwo />
@@ -25,7 +25,7 @@ const Projects = () => {
         </div>
         <div className="row text-center">
           <div className="col-md-4 my-3">
-          <ProjectFour />
+            <ProjectFour />
           </div>
           <div className="col-md-4 my-3">
             <ProjectFive />

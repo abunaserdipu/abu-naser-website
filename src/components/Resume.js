@@ -44,15 +44,8 @@ const Resume = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        <div className="text-center">
-          <button className="btn btn-portfolio my-3">
-            <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
-              <FontAwesomeIcon icon={faDownload} /> Download Resume
-            </a>
-          </button>
-        </div>
-        <h2 className="portfolio-font my-5 text-center">Resume</h2>
+      <div className="container my-3">
+        <h2 className="portfolio-font my-5 p-3 text-center">Resume</h2>
         <h3 className="my-3 fw-bold">Skills</h3>
         <div className="row text-center">
           <div className="col-md-6 my-3">
@@ -146,6 +139,13 @@ const Resume = () => {
             <h6 style={{ color: "green" }}>BBA(Honours) in Management</h6>
             <p className="fw-bold">Dhaka College</p>
           </div>
+        </div>
+        <div className="text-center">
+          <button className="btn btn-portfolio my-3">
+            <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
+              <FontAwesomeIcon icon={faDownload} /> Download Resume
+            </a>
+          </button>
         </div>
       </div>
     </div>
