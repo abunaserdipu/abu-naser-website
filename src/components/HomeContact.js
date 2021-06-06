@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import "./HomeContact.css";
 
 const HomeContact = () => {
   function sendEmail(e) {
@@ -23,11 +24,11 @@ const HomeContact = () => {
     e.target.reset();
   }
   return (
-    <section>
-      <div className="container my-5 text-center">
-        <h2 className="my-5">Contact</h2>
-        <div data-aos="fade-down">
-          <form onSubmit={sendEmail}>
+    <section className="home-contact-bg">
+      <div className="container text-center">
+        <h2 className="py-2">Contact</h2>
+        <div data-aos="fade-left">
+          <form className="py-2" onSubmit={sendEmail}>
             <input
               className="form-control"
               type="text"
