@@ -10,6 +10,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 import { faDatabase, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
@@ -52,34 +53,22 @@ const About = () => {
               , I aim to deliver solutions that are both technically strong and
               user-focused.
             </p>
-            {/* <div className="flex justify-content-center gap-3">
-              <button className="btn btn-portfolio my-3">
-                <a
-                  href="https://drive.google.com/file/d/1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn/view?usp=sharing"
-                  style={{ borderRadius: "30px", padding: "10px 20px" }}
-                >
-                  <FontAwesomeIcon icon={faDownload} /> Download CV
-                </a>
-              </button>
-              <a href="/contact" className="btn btn-outline-success">
-                Contact Me
-              </a>
-            </div> */}
+
             <div className="d-flex justify-content-center gap-3 my-3">
               <a
-                href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ"
+                href="https://drive.google.com/uc?export=download&id=1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn"
                 className="btn btn-portfolio"
                 style={{ padding: "10px 20px" }}
               >
                 <FontAwesomeIcon icon={faDownload} /> Download CV
               </a>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="btn btn-outline-success"
                 style={{ padding: "10px 20px" }}
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
 

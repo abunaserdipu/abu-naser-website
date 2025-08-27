@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import ParticlesBg from "particles-bg";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 import "./Banner.css";
 
 const Banner = () => {
   return (
     <section style={{ minHeight: "100vh" }} className="banner-bg">
-      <div className="container-fluid text-center">
+      <div className="container text-center">
         <div className="row">
           <div className="col-md-7 my-5">
             <div className="banner">
@@ -52,14 +53,22 @@ const Banner = () => {
                 .
               </h5>
 
-              <button className="btn btn-portfolio my-3">
+              <div className="d-flex justify-content-center gap-3 my-3">
                 <a
-                  href="https://drive.google.com/file/d/1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn/view?usp=sharing"
-                  style={{ borderRadius: "30px", padding: "10px 20px" }}
+                  href="https://drive.google.com/uc?export=download&id=1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn"
+                  className="btn btn-portfolio"
+                  style={{ padding: "10px 20px" }}
                 >
                   <FontAwesomeIcon icon={faDownload} /> Download CV
                 </a>
-              </button>
+                <Link
+                  to="/contact"
+                  className="btn btn-outline-success"
+                  style={{ padding: "10px 20px" }}
+                >
+                  Contact Me
+                </Link>
+              </div>
             </div>
           </div>
           <div className="col-md-5 my-5">

@@ -10,6 +10,8 @@ import VerifyApiImg from "../images/verification.png";
 import CourierImg from "../images/courier.png";
 import EnrollmentImg from "../images/enrollment.png";
 import Navbar from "./Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const HomeProjects = () => {
   const projects = [
@@ -54,31 +56,47 @@ const HomeProjects = () => {
   return (
     <div>
       <Navbar />
-        <div className="container text-center my-3">
-          <h2 className="py-2 my-5">Professional Projects</h2>
-          <div className="row py-2 align-items-stretch" data-aos="fade-right">
-            {projects.map((project, index) => (
-              <div className="col-md-4 my-3 d-flex" key={index}>
-                <div className="card w-100 d-flex flex-column">
-                  <img
-                    className="img-fluid"
-                    src={project.img}
-                    alt={project.title}
-                  />
-                  <h5 className="my-2">{project.title}</h5>
-                  <p>
-                    <span className="fw-bold">Technologies:</span>{" "}
-                    {project.tech}
-                  </p>
-                  <p className="small flex-grow-1">{project.desc}</p>
-                  {/* <button className="btn btn-portfolio">
+      <div className="container text-center my-3">
+        <h2 className="py-2 my-5">Professional Projects</h2>
+        <div className="row py-2 align-items-stretch" data-aos="fade-right">
+          {projects.map((project, index) => (
+            <div className="col-md-4 my-3 d-flex" key={index}>
+              <div className="card w-100 d-flex flex-column">
+                <img
+                  className="img-fluid"
+                  src={project.img}
+                  alt={project.title}
+                />
+                <h5 className="my-2">{project.title}</h5>
+                <p>
+                  <span className="fw-bold">Technologies:</span> {project.tech}
+                </p>
+                <p className="small flex-grow-1">{project.desc}</p>
+                {/* <button className="btn btn-portfolio">
                   <Link to="/projects">Show Details</Link>
                 </button> */}
-                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
+
+        <div className="d-flex justify-content-center gap-3 my-3">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn"
+            className="btn btn-portfolio"
+            style={{ padding: "10px 20px" }}
+          >
+            <FontAwesomeIcon icon={faDownload} /> Download CV
+          </a>
+          <Link
+            to="/contact"
+            className="btn btn-outline-success"
+            style={{ padding: "10px 20px" }}
+          >
+            Contact Me
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
