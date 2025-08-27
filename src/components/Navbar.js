@@ -6,18 +6,20 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="navbar navbar-expand-lg navbar-light bg-success fixed-top transparent"
+        className="navbar navbar-expand-lg navbar-light fixed-top transparent"
+        style={{ backgroundColor: "rgb(101, 157, 189)" }}
       >
         <div className="container-fluid">
           <Link className="navbar-brand fw-bold" to="/">
             <img
               className="img-fluid"
               style={{
-                width: '30px'
+                width: "30px",
               }}
               src={icon}
               alt=""
-            /> Abu Naser Dipu
+            />{" "}
+            Abu Naser Dipu
           </Link>
           <button
             className="navbar-toggler"
@@ -33,7 +35,11 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link me-4, fw-bold" aria-current="page" to="/">
+                <Link
+                  className="nav-link me-4, fw-bold"
+                  aria-current="page"
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
@@ -47,7 +53,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link me-4, fw-bold" aria-current="page" to="/blogs">
+                <Link
+                  className="nav-link me-4, fw-bold"
+                  aria-current="page"
+                  to="/blogs"
+                >
                   Blogs
                 </Link>
               </li>
@@ -61,7 +71,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link me-4, fw-bold" aria-current="page" to="/about">
+                <Link
+                  className="nav-link me-4, fw-bold"
+                  aria-current="page"
+                  to="/about"
+                >
                   About
                 </Link>
               </li>

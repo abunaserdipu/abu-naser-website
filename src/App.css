@@ -1,10 +1,12 @@
-
+h2 {
+    font-size: 50px;
+}
 
 .btn-portfolio{
-  background-color: rgba(0, 128, 0, 0.8)
+  background-color: rgba(141, 135, 65, .8)
 }
 .btn-portfolio:hover{
-  background-color: rgba(0, 128, 0, 0.9)
+  background-color: rgba(141, 135, 65, .9)
 }
 .btn-portfolio a{
   text-decoration: none;
