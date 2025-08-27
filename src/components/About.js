@@ -5,12 +5,12 @@ import {
   faReact,
   faJs,
   faNodeJs,
-  faBootstrap,
-  faHtml5,
-  faCss3Alt,
+  faPhp,
+  faLaravel,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./Navbar";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
@@ -18,78 +18,112 @@ const About = () => {
       <Navbar />
       <div className="container">
         <h2 className="portfolio-font text-center my-3">About Me</h2>
-        <div className="row">
+        <div className="row align-items-center">
+          {/* Left: Photo + Bio */}
           <div className="col-md-6 my-5 text-center">
             <img
               className="img-fluid"
               style={{
-                width: "300px",
-                height: "300px",
+                width: "280px",
+                height: "280px",
                 objectFit: "cover",
                 borderRadius: "50%",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
               }}
               src={myPic}
-              alt=""
+              alt="Abu Naser Dipu"
             />
-            <h3 className="fw-bold">
-              I am <span style={{ color: "green" }}>MD. Abu Naser Dipu</span>
+            <h3 className="fw-bold mt-3">
+              I am <span style={{ color: "green" }}>Md. Abu Naser Dipu</span>
             </h3>
-            <p style={{ lineHeight: "30px" }}>
-              I am a web developer. I can provide clean code user-friendly
-              functionality. I also make the website more interactive and
-              responsive by using Bootstrap, Material UI, React Bootstrap.
+            <p style={{ lineHeight: "28px", textAlign: "justify" }}>
+              I’m a <b>Full-Stack Developer</b> with over{" "}
+              <b>2 years of professional experience</b> in designing and
+              developing scalable web applications. I specialize in{" "}
+              <b>Laravel, Next.js, React.js</b>, and <b>FilamentPHP</b>,
+              building robust backends, interactive frontends, and secure
+              API-driven systems.
+              <br />
+              Skilled in{" "}
+              <b>
+                API integration, billing systems, SEO optimization, and shared
+                hosting deployment
+              </b>
+              , I aim to deliver solutions that are both technically strong and
+              user-focused.
             </p>
-            <button className="btn btn-portfolio my-3">
-              <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
-                <FontAwesomeIcon icon={faDownload} /> Download Resume
+            {/* <div className="flex justify-content-center gap-3">
+              <button className="btn btn-portfolio my-3">
+                <a
+                  href="https://drive.google.com/file/d/1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn/view?usp=sharing"
+                  style={{ borderRadius: "30px", padding: "10px 20px" }}
+                >
+                  <FontAwesomeIcon icon={faDownload} /> Download CV
+                </a>
+              </button>
+              <a href="/contact" className="btn btn-outline-success">
+                Contact Me
               </a>
-            </button>
+            </div> */}
+            <div className="d-flex justify-content-center gap-3 my-3">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ"
+                className="btn btn-portfolio"
+                style={{ padding: "10px 20px" }}
+              >
+                <FontAwesomeIcon icon={faDownload} /> Download CV
+              </a>
+              <a
+                href="/contact"
+                className="btn btn-outline-success"
+                style={{ padding: "10px 20px" }}
+              >
+                Contact Me
+              </a>
+            </div>
           </div>
-          <div className="col-md-6 my-5 justify-content-center text-center">
-            <h3>My Skills</h3>
+
+          {/* Right: Skills Icons */}
+          <div className="col-md-6 my-5 text-center">
+            <h3 className="mb-4">Key Skills</h3>
             <div className="row">
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faReact} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faLaravel} size="3x" />
+                  <p className="mt-2 fw-bold">Laravel</p>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faJs} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faReact} size="3x" />
+                  <p className="mt-2 fw-bold">React / Next.js</p>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faNodeJs} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faJs} size="3x" />
+                  <p className="mt-2 fw-bold">JavaScript</p>
                 </div>
               </div>
             </div>
+
             <div className="row">
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faBootstrap} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faPhp} size="3x" />
+                  <p className="mt-2 fw-bold">PHP</p>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faHtml5} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faDatabase} size="3x" />
+                  <p className="mt-2 fw-bold">MySQL</p>
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card bg-success my-3">
-                  <p style={{ fontSize: "50px" }}>
-                    <FontAwesomeIcon icon={faCss3Alt} />
-                  </p>
+                <div className="card bg-success text-white my-3 p-3 shadow-sm">
+                  <FontAwesomeIcon icon={faGithub} size="3x" />
+                  <p className="mt-2 fw-bold">Git / Deployment</p>
                 </div>
               </div>
             </div>
