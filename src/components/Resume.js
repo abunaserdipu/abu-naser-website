@@ -1,149 +1,189 @@
 import React from "react";
-import Skill from "./Skill";
 import Navbar from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
-  const leftSkills = [
-    {
-      name: "HTML5",
-      percentage: "95%",
-    },
-    {
-      name: "Bootstrap",
-      percentage: "90%",
-    },
-    {
-      name: "React",
-      percentage: "80%",
-    },
-    {
-      name: "MongoDB",
-      percentage: "50%",
-    },
-  ];
-  const rightSkills = [
-    {
-      name: "CSS3",
-      percentage: "90%",
-    },
-    {
-      name: "Javascript",
-      percentage: "70%",
-    },
-    {
-      name: "Firebase",
-      percentage: "50%",
-    },
-    {
-      name: "Heroku",
-      percentage: "30%",
-    },
-  ];
   return (
     <div>
       <Navbar />
       <div className="container my-3">
         <h2 className="portfolio-font my-5 p-3 text-center">Resume</h2>
-        <h3 className="my-3 fw-bold">Skills</h3>
-        <div className="row text-center">
-          <div className="col-md-6 my-3">
-            {leftSkills.map((skill) => (
-              <Skill skill={skill}></Skill>
-            ))}
-          </div>
-          <div className="col-md-6 my-3">
-            {rightSkills.map((skill) => (
-              <Skill skill={skill}></Skill>
-            ))}
-          </div>
-        </div>
-        <h3 className="my-3 fw-bold">My Projects</h3>
-        <div className="row">
+
+        {/* Experience Section */}
+        <h3 className="my-3 fw-bold">Professional Experience</h3>
+
+        {/* FYV */}
+        <div className="row my-3">
           <div className="col-md-4">
             <p>
-              <FontAwesomeIcon icon={faCalendarAlt} /> 31 March 2021 - 02 April
-              2021
+              <FontAwesomeIcon icon={faCalendarAlt} /> Jul 2025 – Aug 2025
             </p>
           </div>
           <div className="col-md-8">
             <h6 style={{ color: "green" }}>
-              Daily Products Full Stack Website
+              Full Stack Developer | FYV – Find Your Vehicle
             </h6>
             <ul>
-              <li>MongoDB is used as a database and images stored in imgBB.</li>
               <li>
-                Client site deployed in firebase and server site deployed in
-                Heroku.
+                Developed an API-selling SaaS platform with Next.js frontend and
+                Laravel + Filament backend.
               </li>
-              <li>Bootstrap is used for makes the website responsive.</li>
+              <li>
+                Implemented API key generation, request rate limiting, and usage
+                analytics.
+              </li>
+              <li>
+                Integrated Authorize.Net with Laravel Cashier for subscription
+                billing & automated invoices.
+              </li>
+              <li>
+                Built admin & user dashboards in Filament for managing plans,
+                usage, and billing.
+              </li>
             </ul>
           </div>
         </div>
-        <div className="row">
+
+        {/* Cubix Technology */}
+        <div className="row my-3">
           <div className="col-md-4">
             <p>
-              <FontAwesomeIcon icon={faCalendarAlt} /> 19 March 2021 - 21 March
-              2021
-            </p>
-          </div>
-          <div className="col-md-8">
-            <h6 style={{ color: "green" }}>Dhaka Wheel Transport Service</h6>
-            <ul>
-              <li>
-                Login system applied by using firebase authentication, the user
-                must be logged in for taking service. Bootstrap is used for
-                makes the website responsive.
-              </li>
-              <li>
-                React Router used to go from one page to another it helps to
-                avoid loading complexity.
-              </li>
-              <li>Private Route used for the secure specific page.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <p>
-              <FontAwesomeIcon icon={faCalendarAlt} /> 15 April 2021 - 19 April
-              2021
+              <FontAwesomeIcon icon={faCalendarAlt} /> Sep 2024 – Feb 2025
             </p>
           </div>
           <div className="col-md-8">
             <h6 style={{ color: "green" }}>
-              Car Repair Service Complete Website
+              Executive (Software Development) | Cubix Technology
             </h6>
             <ul>
               <li>
-                Admin can add new services and remove services from the
-                homepage.
+                Developed Hotel Management Software (HMS) using CodeIgniter &
+                MySQL.
               </li>
               <li>
-                Logged in users can order services, gave the review, and see
-                their ordered services.
+                Designed modules including Front Office, Restaurant, Accounts,
+                Inventory, and Banquet.
               </li>
-              <li>International payment method stripe used for payment.</li>
+              <li>
+                Debugged and optimized features to improve system performance &
+                reliability.
+              </li>
             </ul>
           </div>
         </div>
-        <h3 className="my-3 fw-bold">Educational Qualifications</h3>
-        <div className="row">
+
+        {/* Circle Technology */}
+        <div className="row my-3">
           <div className="col-md-4">
             <p>
-              <FontAwesomeIcon icon={faCalendarAlt} /> 2015-2021
+              <FontAwesomeIcon icon={faCalendarAlt} /> Nov 2023 – Aug 2024
             </p>
           </div>
           <div className="col-md-8">
-            <h6 style={{ color: "green" }}>BBA(Honours) in Management</h6>
-            <p className="fw-bold">Dhaka College</p>
+            <h6 style={{ color: "green" }}>
+              Junior Software Engineer | Circle Technology Ltd.
+            </h6>
+            <ul>
+              <li>
+                Developed ERP and Telemedicine applications using Laravel &
+                MySQL.
+              </li>
+              <li>
+                Created and documented REST APIs with Postman for seamless
+                integration.
+              </li>
+              <li>
+                Deployed & maintained apps on cPanel hosting ensuring uptime and
+                availability.
+              </li>
+            </ul>
           </div>
         </div>
+
+        {/* Internship */}
+        <div className="row my-3">
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> Apr 2023 – Jun 2023
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>
+              Intern Backend Developer | SunburstHost
+            </h6>
+            <ul>
+              <li>
+                Built a portfolio website with admin panel & mailing system.
+              </li>
+              <li>
+                Enhanced Hospital Management System with multi-role
+                authentication (doctor, nurse, patient, pharmacist).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Freelance & Projects */}
+        <h3 className="my-3 fw-bold">Freelance & Projects</h3>
+        <ul>
+          <li>
+            <b>VerifyAPI Development:</b> Built secure verification platform
+            (Next.js + Laravel) with billing & SEO optimization.
+          </li>
+          <li>
+            <b>Business Portfolio Websites:</b> Developed SEO-optimized
+            CMS-backed websites for business clients.
+          </li>
+          <li>
+            <b>IsDB Hospital (Raw PHP):</b> Added modules for authentication,
+            booking, and prescriptions.
+          </li>
+          <li>
+            <b>Barishal Courier (Laravel + Vue.js):</b> Courier management
+            system with API & real-time tracking.
+          </li>
+          <li>
+            <b>Vortihoi (CI + React):</b> Enrollment management with dashboards
+            and role-based access control.
+          </li>
+        </ul>
+
+        {/* Education */}
+        <h3 className="my-3 fw-bold">Education</h3>
+        <div className="row my-2">
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 2023
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>
+              IsDB-BISEW Diploma in Web Application Development with PHP &
+              Frameworks
+            </h6>
+          </div>
+        </div>
+        <div className="row my-2">
+          <div className="col-md-4">
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} /> 2023
+            </p>
+          </div>
+          <div className="col-md-8">
+            <h6 style={{ color: "green" }}>Masters in Management</h6>
+            <p className="fw-bold">Dhaka College (CGPA 3.08)</p>
+          </div>
+        </div>
+
+        {/* Resume Download */}
         <div className="text-center">
           <button className="btn btn-portfolio my-3">
-            <a href="https://drive.google.com/uc?export=download&id=1SyNRXt3L8pmyIFKkxocDXxeNYdYDlsTQ">
-              <FontAwesomeIcon icon={faDownload} /> Download Resume
+            <a
+              href="https://drive.google.com/file/d/1gjvpFcnKkBbfI0lfeYg0WsT5mNxv3Wbn/view?usp=sharing"
+              style={{ borderRadius: "30px", padding: "10px 20px" }}
+            >
+              <FontAwesomeIcon icon={faDownload} /> Download CV
             </a>
           </button>
         </div>
