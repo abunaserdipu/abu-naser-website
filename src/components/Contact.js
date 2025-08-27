@@ -7,6 +7,11 @@ import {
   faEnvelope,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   function sendEmail(e) {
@@ -29,12 +34,14 @@ const Contact = () => {
       );
     e.target.reset();
   }
+
   return (
     <div>
       <Navbar />
       <div className="container">
-        <h2 className="portfolio-font mt-5 mb-3 p-3 text-center">Contact me</h2>
+        <h2 className="portfolio-font mt-5 mb-3 p-3 text-center">Contact Me</h2>
         <div className="row">
+          {/* Contact Form */}
           <div className="col-md-6 my-5">
             <form onSubmit={sendEmail}>
               <input
@@ -77,27 +84,68 @@ const Contact = () => {
               />
             </form>
           </div>
+
+          {/* Contact Info */}
           <div className="col-md-6 my-5">
             <div className="card bg-dark text-white p-4">
               <h5>
-                <FontAwesomeIcon icon={faMobile} /> Phone
+                <FontAwesomeIcon icon={faMobile} /> Phone / WhatsApp
               </h5>
-              01521327682
+              <a
+                href="https://wa.me/8801521327682"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-success fw-bold"
+              >
+                +8801521327682
+              </a>
             </div>
+
             <div className="card bg-dark text-white my-2 p-4">
               <h5>
                 <FontAwesomeIcon icon={faEnvelope} /> Email
               </h5>
-              abunaserdipu582@gmail.com
-              <br />
-              abunaserdipu0@gmail.com
+              <a
+                href="mailto:mdabunaserdipu@gmail.com"
+                className="text-success"
+              >
+                mdabunaserdipu@gmail.com
+              </a>
             </div>
+
             <div className="card bg-dark text-white my-2 p-4">
               <h5>
                 <FontAwesomeIcon icon={faHome} /> Address
               </h5>
-              C.B-132, Puraton Kachukhet <br />
-              Dhaka -1206
+              Mirpur-2, Dhaka-1216
+            </div>
+
+            {/* Social Icons */}
+            <div className="d-flex justify-content-start gap-3 my-3">
+              <a
+                href="https://github.com/abunaserdipu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark fs-3"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                href="https://linkedin.com/in/abunaserdipu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark fs-3"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                href="https://wa.me/8801521327682"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark fs-3"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
             </div>
           </div>
         </div>
