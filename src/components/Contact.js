@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="container" data-aos="fade-left">
         <h2 className="portfolio-font mt-5 mb-3 p-3 text-center">Contact Me</h2>
         <div className="row">
           {/* Contact Form */}

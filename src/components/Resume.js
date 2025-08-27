@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <div>
       <Navbar />
-      <div className="container my-3">
+      <div className="container my-3" data-aos="fade-up">
         <h2 className="portfolio-font my-5 p-3 text-center">Resume</h2>
 
         {/* Experience Section */}

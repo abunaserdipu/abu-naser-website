@@ -17,8 +17,8 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        <h2 className="portfolio-font text-center my-3">About Me</h2>
+      <div className="container my-3" data-aos="fade-up">
+        <h2 className="portfolio-font text-center my-5">About Me</h2>
         <div className="row align-items-center">
           {/* Left: Photo + Bio */}
           <div className="col-md-6 my-5 text-center">
